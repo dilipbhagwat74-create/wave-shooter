@@ -19,6 +19,8 @@ body {
 
 button {
   background: linear-gradient(90deg, #00eaff, #8b00ff);
+  background-size: 400% 400%;
+animation: neonBackground 8s ease infinite;
   color: white;
   border: 1px solid #00eaff;
   border-radius: 12px;
@@ -44,6 +46,11 @@ canvas {
   border-radius: 12px;
 }
   </style>
+  @keyframes neonBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
   <style>
 body {
   background: radial-gradient(circle at top, #101b48, #030510 75%) !important;
